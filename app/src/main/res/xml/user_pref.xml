@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory android:title="Settings"/>
+    <ListPreference
+        android:dialogTitle="Select update Time"
+        android:key="updateTime"
+        android:title="SetTime"
+        android:summary="For Updates"
+        android:entries="@array/update_time"
+        android:entryValues="@array/update_time_values"/>
+
+
+</PreferenceScreen>

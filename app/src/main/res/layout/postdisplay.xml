@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:backgroundTint="@color/black"
+    android:gravity="center"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="image for posts!" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:rotation="270"
+            android:cropToPadding="false"
+            android:outlineAmbientShadowColor="@color/black"
+            android:src="@drawable/ic_upvote" />
+
+        <TextView
+            android:id="@+id/updoot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textAlignment="viewStart"
+            android:textColor="@color/cardview_light_background" />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_whatshot_black_24dp" />
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textAlignment="textStart"
+            android:textColor="@color/cardview_light_background" />
+    </LinearLayout>
+
+    <io.ghyeok.stickyswitch.widget.StickySwitch
+        android:id="@+id/sticky_switch"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:visibility="visible"
+        app:ss_animationDuration="600"
+        app:ss_animationType="line"
+        app:ss_iconPadding="18dp"
+        app:ss_iconSize="22dp"
+        app:ss_leftIcon="@drawable/ic_money_off_black_24dp"
+        app:ss_leftText="Invest?"
+        app:ss_rightIcon="@drawable/fatbils_24dp"
+        app:ss_rightText="Invested"
+        app:ss_selectedTextSize="14sp"
+        app:ss_sliderBackgroundColor="@color/dollaBillz"
+        app:ss_switchColor="@color/IconColor"
+        app:ss_textColor="@color/dollaBillz"
+        app:ss_textSize="12sp" />
+
+
+
+</LinearLayout>
